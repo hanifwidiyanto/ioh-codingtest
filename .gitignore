@@ -1,0 +1,29 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Built Output
+build/
+dist/
+
+# Environment variables
+.env
+
+# Testing
+test/
+
+# IDE specific
+.vscode/
+.idea/
+
+# Dependencies installed via npm
+package-lock.json
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

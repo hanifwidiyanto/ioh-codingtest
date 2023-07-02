@@ -1,0 +1,41 @@
+### User Operations ###
+
+POST http://localhost:5000/api/users/login
+Content-Type: application/json
+
+{
+"email": "abc66@gmail.com",
+    "password": "teat123"
+}
+
+###
+GET http://localhost:5000/api/users/check
+
+
+###
+
+POST http://localhost:5000/api/users/register
+Content-Type: application/json
+
+{
+    "email": "abca@gmail.com",
+    "password": "test123",
+    "confPassword" :"test123"
+}
+
+
+
+###
+
+PUT http://localhost:5000/api/users/profile
+Content-Type: application/json
+
+{
+   "email": "aba66@gmail.com",
+    "password": "teat123"
+}
+
+###
+
+GET http://localhost:5000/api/users/profile
+

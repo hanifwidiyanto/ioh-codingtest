@@ -1,0 +1,42 @@
+###
+POST http://localhost:5000/api/invoices
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "item_id": 2,
+      "quantity": 2
+    },
+    {
+      "item_id": 20,
+      "quantity":2
+    }
+  ]
+}
+
+###
+GET http://localhost:5000/api/invoices?limit=2&page=3
+
+###
+GET http://localhost:5000/api/invoices/e2439869
+
+###
+PUT http://localhost:5000/api/invoices/55e9ab65
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "item_id": 2,
+      "quantity": 4
+    },
+    {
+      "item_id": 20,
+      "quantity":21
+    }
+  ]
+}
+
+###
+DELETE http://localhost:5000/api/invoices/55e9ab65
