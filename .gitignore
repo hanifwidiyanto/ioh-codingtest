@@ -12,8 +12,6 @@ dist/
 # Environment variables
 .env
 
-# Testing
-test/
 
 # IDE specific
 .vscode/
