@@ -14,7 +14,6 @@ export default function ListItem() {
             console.log(error);
         }
     };
-
     useEffect(() => {
         getItems();
     }, []);
