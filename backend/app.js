@@ -44,8 +44,8 @@ app.use("/api/items", itemRoute);
 app.use(notFound);
 app.use(errorHandler);
 
-const server = app.listen(port, () => {
+app.listen(port, () => {
   console.log("Server running on port " + port);
 });
 
-export default server;
+export default app;
