@@ -12,6 +12,7 @@ import ViewCart from './pages/ViewCart';
 import InvoiceDetail from './pages/InvoiceDetail';
 import AllInvoice from './pages/AllInvoice';
 import InvoiceUpdate from './pages/InvoiceUpdate';
+import Register from './pages/Register';
 
 export const UserContext = createContext();
 
@@ -38,6 +39,12 @@ function App() {
             <>
               <Navbar />
               <Login />
+            </>
+          } />
+          <Route path="/register" element={
+            <>
+              <Navbar />
+              <Register />
             </>
           } />
           <>

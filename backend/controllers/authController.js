@@ -34,10 +34,11 @@ export const register = asyncHandler(async (req, res) => {
 
     res.cookie("jwt", token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV !== "development",
-      sameSite: "strict",
+      secure: process.env.NODE_ENV !== 'development',
+      // sameSite: "none",
       maxAge: 24 * 60 * 60 * 1000,
     });
+
 
     res.status(201).json({ token, user });
   } else {
@@ -83,7 +84,7 @@ export const authUser = asyncHandler(async (req, res) => {
     res.cookie("jwt", token, {
       httpOnly: true,
       secure: process.env.NODE_ENV !== 'development',
-      // sameSite: "lax",
+      // sameSite: "none",
       maxAge: 24 * 60 * 60 * 1000,
     });
 

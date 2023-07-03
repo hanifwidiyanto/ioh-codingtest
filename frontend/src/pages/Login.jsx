@@ -3,7 +3,7 @@ import axios from "axios";
 import PropTypes from 'prop-types'
 import { LoginForm } from "../components/LoginForm";
 import { UserContext } from "../App";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 function ErrorMessage({ error }) {
 
@@ -89,9 +89,9 @@ export default function Login() {
                 />
                 <div className="flex gap-2 items-center">
                     <h6 className="font-oxanium text-sm">Belum mendaftar?</h6>
-                    <button className="text-sm font-oxanium-semibold px-4 py-1 text-white rounded-md bg-yellow-pixel">
+                    <Link to="/register" className="text-sm font-oxanium-semibold px-4 py-1 text-white rounded-md bg-yellow-pixel">
                         Daftar
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
