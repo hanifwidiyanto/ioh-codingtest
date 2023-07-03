@@ -89,9 +89,9 @@ export default function Register() {
           confPassword={confPassword}
         />
         <div className="flex gap-2 items-center">
-          <h6 className="font-oxanium text-sm">Belum mendaftar?</h6>
-          <Link to="/register" className="text-sm font-oxanium-semibold px-4 py-1 text-white rounded-md bg-yellow-pixel">
-            Daftar
+          <h6 className="font-oxanium text-sm">Sudah mendaftar?</h6>
+          <Link to="/login" className="text-sm font-oxanium-semibold px-4 py-1 text-white rounded-md bg-yellow-pixel">
+            Login
           </Link>
         </div>
       </div>
