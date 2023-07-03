@@ -24,13 +24,21 @@ cd ioh-codingtest
 ```
 
 3. Install all the dependencies by running the following command:
-4. 
+   
+   
 ```bash
 npm install
 ```
 
-4. Create a .env file in the project directory and populate it with the provided configuration:
-5. 
+4. Also install dependencies to frontend app, by running the following command:
+
+```bash
+cd frontend
+npm install
+```
+
+6. Back to Parent Folder again, and create a .env file in the project directory and populate it with the provided configuration:
+   
 ```plaintext
 NODE_ENV=development
 PORT=5000
