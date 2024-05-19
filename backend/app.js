@@ -12,6 +12,9 @@ import { notFound, errorHandler } from "./middleware/error.js";
 
 import db from "./config/database.js";
 
+const a = true
+console.log(a)
+
 dotenv.config();
 
 // (async () => {
